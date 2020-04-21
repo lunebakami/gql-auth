@@ -1,0 +1,12 @@
+type User {
+  email: String!
+  password: String!
+}
+
+type Object {
+  data: String!
+}
+
+type Query {
+  createSession(email: String!, password: String!): User
+}
